@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <style>
+        .colorPremiere{
+          background-color: #0C3D3A;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        .colorSekunder{
+          background-color: #0A332F;
+          margin-top: -20px;
+        }
+
+        .navBar li{
+          padding-left: 30px;
+        }
+
+        .textColor{
+          color: white;
+        }
+        
+        .logoVektorial{
+          margin-top: 180px;
+        }
+
+        .semak img{
+          margin-top: 40px;
+          width: 100%;
+        }
+
+        .main{
+          padding-bottom: 40px;
+        }
+
+        .main li{
+          margin-top: 48x;
+          display: inline-block;
+          padding: 40px;
+        }
+
+        .main p{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        }
+
+        .main .alamat{
+        margin-top: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        }
+
+        .belukar img{
+        margin-top:150px;
+        height: 80px;
+        }
+
+        .main .pemateri img{
+          width: 90%;
+        }
+
+        #gathering{
+          margin-top: 150px;
+        }
+
+        .semakBawah img{
+          width: 100%;
+        }
+
+        .conTombol{
+        margin-top: 100px;
+        text-align: center;
+        }
+
+        .conTombol .tombol{
+            width: 300px;
+            height: 100px;
+            background-color: #0A332F;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .conTombol .tombol span{
+            transform: scale(0);
+            transition-duration: 0.3s;
+            border-radius: 50%;
+        }
+
+        .conTombol a:hover span{
+            border-radius: 0;
+            display: block;
+            width: 300px;
+            height: 100px;
+            transform: scale(1);
+            background-color: #198075;
+        }
+        .semakSemak{
+            display: inline-block;
+            width: 100%;
+            height: 373;
+            position: relative;
+        }
+        .semakSemak .kanan{
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+
+        footer{
+            height: 220px;
+            background-color: #0A332F;
+        }
+
+        footer p{
+            text-align: center;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 220px;
+            margin-bottom: 0;
+        }
+
+
+        @media screen and (max-width : 500px){
+        .belukar img{
+          height: 40px;
+        }
+
+        .semakSemak{
+          display: inline-block;
+          margin-top: 40px;
+        }
+
+        .pemateri{
+          padding: 0;
+        }
+
+        #gathering{
+          margin-top: 10px;
+        }
+        
+        .semakSemak .kanan{
+          width: 30%;
+        }
+        
+        .semakSemak .kiri{
+          width: 30%;
+        }
+
+        .navBar li{
+          padding-left: 0;
+          margin: 16px auto auto;
+        }
+
+}
+
+        
+
+      </style>
+    <title>Vektorial</title>
+</head>
+<body class="colorPremiere">
+    <nav class="navbar navbar-expand-lg navbar-light colorPremiere fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/SVG/logo vektorina.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+            <ul class="navbar-nav navBar">
+              <li>
+                <a class="nav-link text-white" href="#workshop">Workshop</a>
+              </li>
+              <li>
+                <a class="nav-link text-white" href="#gathering">Gathering</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="text-center">
+          <img class="logoVektorial" src="assets/PNG/LOGO.png " alt="">
+      </div>
+    </div>
+    <div class="semak">
+      <img src="assets/SVG/semak.svg" alt="">
+    </div>
+    <div class="main colorSekunder">
+      <div class="container">
+        <div class="belukar text-center" id="workshop"><img src="assets/PNG/PEMATERI WORKSHOP.png" alt=""></div>
+          <ul class="text-center pemateri">
+              <li><img src="assets/PNG/RAMHAD.png" alt=""></li>
+              <li><img src="assets/PNG/AHMAD.png" alt=""></li>
+              <li><img src="assets/PNG/TITO.png" alt=""></li>
+          </ul>
+        <p>15 - 16 Februari 2020 <span><img src="assets/SVG/kilat.svg" alt=""></span> 08.00 - 12.30</p>
+        <p class="alamat">Jln. Hertasning 1 no.3, Makassar, belakang kantor DPRD Kota Makassar</p>
+        </div>
+        <div class="container">
+          <div class="belukar text-center" id="gathering"><img src="assets/PNG/PEMBICARA.png" alt=""></div>
+            <ul class="text-center pemateri">
+                <li><img src="assets/PNG/FIRMAN.png" alt=""></li>
+                <li><img src="assets/PNG/JUNAEDI.png" alt=""></li>
+                <li><img src="assets/PNG/ANANG.png" alt=""></li>
+            </ul>
+          <p>15 - 16 Februari 2020 <span><img src="assets/SVG/kilat.svg" alt=""></span> 08.00 - 12.30</p>
+          <p class="alamat">Jln. Hertasning 1 no.3, Makassar, belakang kantor DPRD Kota Makassar</p>
+          </div>
+      </div>
+      <div class="semakBawah">
+        <img src="assets/SVG/semakBawah.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="text-center">
+            <img class="logoVektorial" src="assets/PNG/LOGO.png " alt="">
+        </div>
+      </div>
+      <div class="conTombol">
+        <a href ="http://tiny.cc/vektorial" target="_blank" class="tombol"> <span>JOIN NOW</span></a>
+      </div>
+    <div class="semakSemak">
+        <img class="kiri" src="assets/PNG/daunKiri.png" alt="">
+        <img class="kanan" src="assets/PNG/daunKanan.png" alt="">
+    </div>
+    <footer>
+        <p>
+            #Copyright 2020
+        </p>
+    </footer>
+
+</body >
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"></script>
