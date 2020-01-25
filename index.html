@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
       <style>
         /* html {
         scroll-behavior: smooth;
@@ -114,6 +115,62 @@
           width: 90%;
         }
 
+        #tentang img{
+          width: 90%;
+        }
+
+        .p-tentang p {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 29px;
+          text-align: justify;
+          color: #FFFFFF;
+          width: 95%;
+          margin: 28px auto 0px auto;
+        }
+
+        .iconKegiatan img{
+          width: 40%;
+          height: auto;
+          margin-top: 60px;
+          margin-bottom: 60px;
+        }
+        
+        .kotak-info{
+          height: 180px;
+          position: relative;
+        }
+
+        .p-info img{
+          position: absolute;
+          height: 40px;
+          left: 0;
+          margin-top: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+
+        .p-info .kotak-info{
+          line-height: 180px;
+        }
+
+        .p-info .kotak-info p{
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 29px;
+          text-align: justify;
+          color: #FFFFFF;
+          margin: auto 0;
+          display: inline-block;
+          vertical-align: middle;
+ 
+        }
+
         #gathering{
           margin-top: 150px;
         }
@@ -173,15 +230,37 @@
             background-color: #0A332F;
         }
 
-        footer p{
-            text-align: center;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 220px;
-            margin-bottom: 0;
+        footer .footerKanan a{
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF;
+          display: block;
+        }
+
+        .foot{
+          padding-top: 48px;
+        }
+
+        footer .footerKanan a{
+          margin-bottom: 36px;
+        }
+
+        footer .footerKanan i{
+          margin-right: 20px;
+        }
+
+
+        footer .footerKiri .alamat{
+          margin-top: 80px;
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #278063;
         }
 
 
@@ -198,6 +277,31 @@
 
         .pemateri{
           padding: 0;
+        }
+
+        
+        .p-tentang p {
+          font-size: 14px;
+        }
+
+        .iconKegiatan img{
+          width: 90%;
+          height: auto;
+          margin-top: 60px;
+        }
+        
+        .p-info .kotak-info .pInfo{
+          height: auto;
+        }
+
+        .kotak-info{
+          position: static;
+        }
+
+        .p-info img{
+          position: static;
+          display:block;
+          margin-top: 70px;
         }
 
         #gathering{
@@ -217,6 +321,44 @@
           margin: 16px auto auto;
         }
 
+        .iconKegiatan img{
+          margin-top: 20px;
+          margin-bottom: 0;
+        }
+
+        .kotak-info{
+          height: 180px;
+        }
+
+        .p-info .kotak-info img{
+          height: 40px;
+        }
+
+        .p-info .pInfo{
+          overflow: auto;
+        }
+
+        .p-info .kotak-info{
+          line-height: 0;
+          width: 100%;
+        }
+
+        footer{
+          height: 400px;
+        }
+
+        footer .footerKiri .alamat{
+          margin-top: 10px;
+        }
+
+        footer .footerKanan{
+          margin-top: 40px;
+        }
+
+        footer .footerKanan i{
+          margin-right: 8px;
+        }
+
 }
 
         
@@ -227,9 +369,9 @@
 <body class="colorPremiere" id="main">
     <nav class="navbar navbar-expand-lg navbar-light colorPremiere fixed-top">
       <div class="container">
-        <a class="navbar-brand page-scroll" href="#main"><img src="assets/SVG/logo vektorina.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand page-scroll" href="#main"><img src="assets/SVG/logo vektorina color.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" style="">
+          <i class="fa fa-bars fa-lg" style="color: #45bb9b"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
@@ -240,6 +382,9 @@
               </li>
               <li>
                 <a class="nav-link text-white page-scroll" href="#gathering">Gathering</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="http://tiny.cc/vektorial"><button type="button" class="btn btn-outline-light">Join Now</button></a>
               </li>
             </ul>
         </div>
@@ -258,6 +403,82 @@
     </div>
     <div class="main colorSekunder">
       <div class="container">
+        <div class="belukar text-center fade-in" id="tentang">
+          <img src="assets/SVG/tentang kegiatan.svg" alt="">
+          <div class="p-tentang">
+            <p>
+              &emsp;“Vektorial Inspiring” merupakan acara tahunan berupa pelatihan yang diselenggarakan oleh Vektorina Makassar. Sebagai komunitas 
+              kreatif pecinta seni desain grafis, bukan hanya mengupayakan agar anggotanya tetap aktif berkarya tetapi juga perlu konsisten 
+              menyelenggarakan pelatihan demi pengembangan keterampilan dan kreatifitas para desainer grafis kota Makassar.
+            </p>
+            <p>
+              &emsp;Vektorial Inspiring” hadir sebagai upaya menjawab tantagan era 4.0, dimana industri kreatif diharapkan akan memberi kontribusi 
+              besar pada kemajuan suatu bangsa. Di era ini pengetahuan dan keterampilan dituntut untuk terus diupgrade, diperbaharui dan 
+              ditingkatkan. Olehnya itu, Vektorina Makassar bekerja keras memberikan yang terbaik pada kegiatan ini
+            </p>
+            <p>
+              &emsp;Setelah sukses dengan “Vektorial Inspiring” 1 dan 2 di tahun 2017 dan 2018 yang telah diikuti oleh puluhan desainer seSulawesi-
+              Selatan, tahun ini kembali lagi Vektorina Makassar menghadirkan “Vektorial Inspiring vol. 3” dengan konsep yang jauh lebih 
+              menarik.
+            </p>
+          </div>
+        </div>
+        <div class="belukar text-center fade-in">
+          <img src="assets/PNG/INFO KEGIATAN.png" alt="">
+          <div class="iconKegiatan">
+            <img src="assets/PNG/icon kegiatan.png" alt="">
+          </div>
+          <div class="p-info">
+            <div class="row">
+              <div class="col-sm-4 kotak-info ">
+                <img src="assets/PNG/GENERIAL.png" alt="">
+              </div>
+              <div class="col-sm-8 kotak-info pInfo">
+                <p>
+                  GENERIAL (General Vektorial) adanalah tahap dimana peserta diberi pemahaman tentang kegiatan Vektorial Inspiring 3.0, 
+                  dan penjelasan tentang teknis seputar kegiatan ini, dan yang mengisi diskusi pada segmen tersebut adalah panitia dari 
+                  Vektorial Inspiring 3.0.
+                </p>
+              </div>
+              <div class="col-sm-4 kotak-info">
+                <img src="assets/PNG/WORKSHOP.png" alt="">
+              </div>
+              <div class="col-sm-8 kotak-info  pInfo">
+                <p>
+                  WORKSHOP adalah tahapan dimana peserta belajar teknik penggunakan tools software dan pengembangan skill.
+                </p>
+              </div>
+              <div class="col-sm-4 kotak-info">
+                <img src="assets/PNG/GATHERING.png" alt="">
+              </div>
+              <div class="col-sm-8 kotak-info  pInfo">
+                <p>
+                  GATHERING & SHARING adalah tahap dimana peserta, tamu dan pemateri saling berbagi sudut pandang tentang desain, 
+                  market dan mindset. di kegiatan ini juga adbeberapa games untuk membangun emosional seluruh peserta yang hadir di 
+                  kegiatan ini.
+                </p>
+              </div>
+              <div class="col-sm-4 kotak-info">
+                <img src="assets/PNG/CHALLENGE.png" alt="">
+              </div>
+              <div class="col-sm-8 kotak-info  pInfo">
+                <p>
+                  CHALLANGE adalah tahapan dimana peserta belajar akan diberi ujian berupa brief untuk secara online dipamerkan pada 
+                  tahapan selanjutnya.
+                </p>
+              </div>
+              <div class="col-sm-4 kotak-info">
+                <img src="assets/PNG/EXHIBITION.png" alt="">
+              </div>
+              <div class="col-sm-8 kotak-info  pInfo">
+                <p>
+                  EXHIBITION adalah pameran karya dari para peserta Vektorial Inspiring akan dipamerkan dalam satu kegiatan pameran 
+                  untuk mengapresiasi para masing-masing peserta Vektorial Inspiring 3.0.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="belukar text-center fade-in" id="workshop"><img src="assets/PNG/PEMATERI WORKSHOP.png" alt=""></div>
           <ul class="text-center pemateri fade-in">
               <li><img src="assets/PNG/RAMHAD.png" alt=""></li>
@@ -283,23 +504,31 @@
       </div>
       <div class="container">
         <div class="text-center">
-            <img class="logoVektor fade-in" src="assets/PNG/LOGO.png " alt="">
+            <img class="logoVektor fade-in" id="joinYuk" src="assets/PNG/LOGO.png " alt="">
         </div>
       </div>
-      <div class="conTombol">
-        <a href ="http://tiny.cc/vektorial" target="_blank" class="tombol"> <span>JOIN NOW</span></a>
+      <div class="conTombol fade-in">
+        <a href ="http://tiny.cc/vektorial" class="tombol"> <span>JOIN NOW</span></a>
       </div>
     <div class="semakSemak">
         <img class="kiri" src="assets/PNG/daunKiri.png" alt="">
         <img class="kanan" src="assets/PNG/daunKanan.png" alt="">
     </div>
     <footer>
-        <p>
-            #Copyright 2020
-        </p>
-    </footer>
-
-
+      <div class="container">
+        <div class="row foot">
+          <div class="col-sm-8 footerKiri">
+            <img src="assets/SVG/logo vektorina.svg" alt="">
+            <div class="alamat">Makassar, Indonesia 2020</div>
+          </div>
+          <div class="col-sm-4 footerKanan">
+            <a href="https://www.facebook.com/v3ctorinamakassar/"><i class="fa fa-facebook-square fa-lg"></i>v3ctorina makassar</a>
+            <a href="https://www.instagram.com/vektorinamakassar/"><i class="fa fa-instagram fa-lg"></i>vektorinamakassar</a>
+            <a href="v3ktorina.mksr@gmail.com"><i class="fa fa-envelope fa-lg"></i>v3ktorina.mksr@gmail.com</a>
+          </div>
+          </div>
+        </div>
+      </footer>
 </body >
 </html>
 
