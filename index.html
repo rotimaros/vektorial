@@ -27,9 +27,49 @@
         .textColor{
           color: white;
         }
+
+        .lebarLogoVektor{
+          width: 100%;
+          height: 500px;
+          position: relative;
+        }
+
+        .logoVektor{
+          margin-top: 200px;
+        }
         
         .logoVektorial{
-          margin-top: 180px;
+          animation: logoVektor;
+          animation-timing-function: cubic-bezier(0, 0, 0.34, 1.01);
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+
+/* scroll fade */
+
+.fade-in {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s cubic-bezier(0, 0, 0.34, 1.01);
+}
+
+.fade-in.appear {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+        @keyframes logoVektor{
+          0% {
+            margin-top: 300px;
+            opacity: 0;
+          }
+
+          100%{
+            margin-top: 180px;
+            opacity: 1;
+          }
         }
 
         .semak img{
@@ -145,6 +185,7 @@
         }
 
 
+
         @media screen and (max-width : 500px){
         .belukar img{
           height: 40px;
@@ -206,8 +247,10 @@
     </nav>
 
     <div class="container">
-      <div class="text-center">
+      <div class="lebarLogoVektor">
+        <div class="text-center">
           <img class="logoVektorial" src="assets/PNG/LOGO.png " alt="">
+        </div>
       </div>
     </div>
     <div class="semak">
@@ -215,8 +258,8 @@
     </div>
     <div class="main colorSekunder">
       <div class="container">
-        <div class="belukar text-center" id="workshop"><img src="assets/PNG/PEMATERI WORKSHOP.png" alt=""></div>
-          <ul class="text-center pemateri">
+        <div class="belukar text-center fade-in" id="workshop"><img src="assets/PNG/PEMATERI WORKSHOP.png" alt=""></div>
+          <ul class="text-center pemateri fade-in">
               <li><img src="assets/PNG/RAMHAD.png" alt=""></li>
               <li><img src="assets/PNG/AHMAD.png" alt=""></li>
               <li><img src="assets/PNG/TITO.png" alt=""></li>
@@ -225,8 +268,8 @@
         <p class="alamat">Jln. Hertasning 1 no.3, Makassar, belakang kantor DPRD Kota Makassar</p>
         </div>
         <div class="container">
-          <div class="belukar text-center" id="gathering"><img src="assets/PNG/PEMBICARA.png" alt=""></div>
-            <ul class="text-center pemateri">
+          <div class="belukar text-center fade-in" id="gathering"><img src="assets/PNG/PEMBICARA.png" alt=""></div>
+            <ul class="text-center pemateri fade-in">
                 <li><img src="assets/PNG/FIRMAN.png" alt=""></li>
                 <li><img src="assets/PNG/JUNAEDI.png" alt=""></li>
                 <li><img src="assets/PNG/ANANG.png" alt=""></li>
@@ -240,7 +283,7 @@
       </div>
       <div class="container">
         <div class="text-center">
-            <img class="logoVektorial" src="assets/PNG/LOGO.png " alt="">
+            <img class="logoVektor fade-in" src="assets/PNG/LOGO.png " alt="">
         </div>
       </div>
       <div class="conTombol">
@@ -265,6 +308,7 @@
 <script src="bootstrap/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"></script>
 <script src="jquery.js"></script>
 <script src="jquery easing.js"></script>
+<script src="script.js"></script>
 <!-- <script src="script.js"></script> -->
 <script>
     $(document).ready(function(){
@@ -287,4 +331,5 @@
       } // End if
     });
   });
+
 </script>
